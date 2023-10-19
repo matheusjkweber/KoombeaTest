@@ -1,0 +1,915 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10410845910427BA9340FADA /* Pods_KoombeaTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E224E355F3DCA7F6C3BDA41 /* Pods_KoombeaTestTests.framework */; };
+		2F419C792AE1CE4800F19AA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419C782AE1CE4800F19AA7 /* AppDelegate.swift */; };
+		2F419C7B2AE1CE4800F19AA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419C7A2AE1CE4800F19AA7 /* SceneDelegate.swift */; };
+		2F419C7D2AE1CE4800F19AA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419C7C2AE1CE4800F19AA7 /* ViewController.swift */; };
+		2F419C802AE1CE4800F19AA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F419C7E2AE1CE4800F19AA7 /* Main.storyboard */; };
+		2F419C822AE1CE4900F19AA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F419C812AE1CE4900F19AA7 /* Assets.xcassets */; };
+		2F419C852AE1CE4900F19AA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F419C832AE1CE4900F19AA7 /* LaunchScreen.storyboard */; };
+		2F419C902AE1CE4900F19AA7 /* KoombeaTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419C8F2AE1CE4900F19AA7 /* KoombeaTestTests.swift */; };
+		2F419C9A2AE1CE4900F19AA7 /* KoombeaTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419C992AE1CE4900F19AA7 /* KoombeaTestUITests.swift */; };
+		2F419C9C2AE1CE4900F19AA7 /* KoombeaTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419C9B2AE1CE4900F19AA7 /* KoombeaTestUITestsLaunchTests.swift */; };
+		2F419CA92AE1CEB300F19AA7 /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CA82AE1CEB300F19AA7 /* ContactsListViewController.swift */; };
+		2F419CAC2AE1CECC00F19AA7 /* ContactsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CAB2AE1CECC00F19AA7 /* ContactsListViewModel.swift */; };
+		2F419CAE2AE1CED500F19AA7 /* ContactsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CAD2AE1CED500F19AA7 /* ContactsListView.swift */; };
+		2F419CB12AE1CFC000F19AA7 /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CB02AE1CFC000F19AA7 /* ScreenSize.swift */; };
+		2F419CC22AE1D11F00F19AA7 /* NetworkManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CB42AE1D11F00F19AA7 /* NetworkManagerMock.swift */; };
+		2F419CC32AE1D11F00F19AA7 /* ParameterEnconding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CB62AE1D11F00F19AA7 /* ParameterEnconding.swift */; };
+		2F419CC42AE1D11F00F19AA7 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CB72AE1D11F00F19AA7 /* JSONParameterEncoder.swift */; };
+		2F419CC52AE1D11F00F19AA7 /* URLParameterEnconding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CB82AE1D11F00F19AA7 /* URLParameterEnconding.swift */; };
+		2F419CC62AE1D11F00F19AA7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CBA2AE1D11F00F19AA7 /* NetworkManager.swift */; };
+		2F419CC72AE1D11F00F19AA7 /* KoombeaEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CBC2AE1D11F00F19AA7 /* KoombeaEndpoint.swift */; };
+		2F419CC82AE1D11F00F19AA7 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CBE2AE1D11F00F19AA7 /* HTTPTask.swift */; };
+		2F419CC92AE1D11F00F19AA7 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CBF2AE1D11F00F19AA7 /* HTTPMethod.swift */; };
+		2F419CCA2AE1D11F00F19AA7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CC02AE1D11F00F19AA7 /* Router.swift */; };
+		2F419CCB2AE1D11F00F19AA7 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CC12AE1D11F00F19AA7 /* EndPointType.swift */; };
+		2F419CCD2AE1D16200F19AA7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CCC2AE1D16200F19AA7 /* UserModel.swift */; };
+		2F419CCF2AE1D1FC00F19AA7 /* ContactListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CCE2AE1D1FC00F19AA7 /* ContactListService.swift */; };
+		2F419CD12AE1D23600F19AA7 /* LoadingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CD02AE1D23600F19AA7 /* LoadingHelper.swift */; };
+		2F419CD32AE1D2F600F19AA7 /* ContactsListTableViewDataSourceAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CD22AE1D2F600F19AA7 /* ContactsListTableViewDataSourceAndDelegate.swift */; };
+		2F419CD62AE1D43200F19AA7 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CD52AE1D43200F19AA7 /* ContactTableViewCell.swift */; };
+		2F419CD82AE1D55000F19AA7 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CD72AE1D55000F19AA7 /* UITableView+Ext.swift */; };
+		2F419CDA2AE1D74500F19AA7 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F419CD92AE1D74500F19AA7 /* ImageDownloader.swift */; };
+		A99CFA5FC37C7474609E98F4 /* Pods_KoombeaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B62F9F845161A682329F3F /* Pods_KoombeaTest.framework */; };
+		AAF529BCF1725CD833CFC43B /* Pods_KoombeaTest_KoombeaTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CEDA7E3333FEB98E61B37F /* Pods_KoombeaTest_KoombeaTestUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F419C8C2AE1CE4900F19AA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F419C6D2AE1CE4800F19AA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F419C742AE1CE4800F19AA7;
+			remoteInfo = KoombeaTest;
+		};
+		2F419C962AE1CE4900F19AA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F419C6D2AE1CE4800F19AA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F419C742AE1CE4800F19AA7;
+			remoteInfo = KoombeaTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09CEDA7E3333FEB98E61B37F /* Pods_KoombeaTest_KoombeaTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoombeaTest_KoombeaTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F93A4193D483C913871D0F1 /* Pods-KoombeaTest-KoombeaTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoombeaTest-KoombeaTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-KoombeaTest-KoombeaTestUITests/Pods-KoombeaTest-KoombeaTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		18AC146DAA7BDABA3671111F /* Pods-KoombeaTest-KoombeaTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoombeaTest-KoombeaTestUITests.release.xcconfig"; path = "Target Support Files/Pods-KoombeaTest-KoombeaTestUITests/Pods-KoombeaTest-KoombeaTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2F419C752AE1CE4800F19AA7 /* KoombeaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoombeaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F419C782AE1CE4800F19AA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F419C7A2AE1CE4800F19AA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2F419C7C2AE1CE4800F19AA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F419C7F2AE1CE4800F19AA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F419C812AE1CE4900F19AA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F419C842AE1CE4900F19AA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F419C862AE1CE4900F19AA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F419C8B2AE1CE4900F19AA7 /* KoombeaTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoombeaTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F419C8F2AE1CE4900F19AA7 /* KoombeaTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoombeaTestTests.swift; sourceTree = "<group>"; };
+		2F419C952AE1CE4900F19AA7 /* KoombeaTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoombeaTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F419C992AE1CE4900F19AA7 /* KoombeaTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoombeaTestUITests.swift; sourceTree = "<group>"; };
+		2F419C9B2AE1CE4900F19AA7 /* KoombeaTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoombeaTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2F419CA82AE1CEB300F19AA7 /* ContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
+		2F419CAB2AE1CECC00F19AA7 /* ContactsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewModel.swift; sourceTree = "<group>"; };
+		2F419CAD2AE1CED500F19AA7 /* ContactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListView.swift; sourceTree = "<group>"; };
+		2F419CB02AE1CFC000F19AA7 /* ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
+		2F419CB42AE1D11F00F19AA7 /* NetworkManagerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerMock.swift; sourceTree = "<group>"; };
+		2F419CB62AE1D11F00F19AA7 /* ParameterEnconding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEnconding.swift; sourceTree = "<group>"; };
+		2F419CB72AE1D11F00F19AA7 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		2F419CB82AE1D11F00F19AA7 /* URLParameterEnconding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEnconding.swift; sourceTree = "<group>"; };
+		2F419CBA2AE1D11F00F19AA7 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2F419CBC2AE1D11F00F19AA7 /* KoombeaEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KoombeaEndpoint.swift; sourceTree = "<group>"; };
+		2F419CBE2AE1D11F00F19AA7 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		2F419CBF2AE1D11F00F19AA7 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		2F419CC02AE1D11F00F19AA7 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		2F419CC12AE1D11F00F19AA7 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		2F419CCC2AE1D16200F19AA7 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		2F419CCE2AE1D1FC00F19AA7 /* ContactListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListService.swift; sourceTree = "<group>"; };
+		2F419CD02AE1D23600F19AA7 /* LoadingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingHelper.swift; sourceTree = "<group>"; };
+		2F419CD22AE1D2F600F19AA7 /* ContactsListTableViewDataSourceAndDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListTableViewDataSourceAndDelegate.swift; sourceTree = "<group>"; };
+		2F419CD52AE1D43200F19AA7 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		2F419CD72AE1D55000F19AA7 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		2F419CD92AE1D74500F19AA7 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		3A0A5D4B9CF10C98D3C8B131 /* Pods-KoombeaTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoombeaTest.release.xcconfig"; path = "Target Support Files/Pods-KoombeaTest/Pods-KoombeaTest.release.xcconfig"; sourceTree = "<group>"; };
+		4E224E355F3DCA7F6C3BDA41 /* Pods_KoombeaTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoombeaTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFD64C1E4AC781CEBABBB256 /* Pods-KoombeaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoombeaTest.debug.xcconfig"; path = "Target Support Files/Pods-KoombeaTest/Pods-KoombeaTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C8B62F9F845161A682329F3F /* Pods_KoombeaTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoombeaTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7620EC44D09D50AAA9EFEF8 /* Pods-KoombeaTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoombeaTestTests.debug.xcconfig"; path = "Target Support Files/Pods-KoombeaTestTests/Pods-KoombeaTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0E20F7DF7E2BA384904924B /* Pods-KoombeaTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoombeaTestTests.release.xcconfig"; path = "Target Support Files/Pods-KoombeaTestTests/Pods-KoombeaTestTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F419C722AE1CE4800F19AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A99CFA5FC37C7474609E98F4 /* Pods_KoombeaTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F419C882AE1CE4900F19AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10410845910427BA9340FADA /* Pods_KoombeaTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F419C922AE1CE4900F19AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF529BCF1725CD833CFC43B /* Pods_KoombeaTest_KoombeaTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F419C6C2AE1CE4800F19AA7 = {
+			isa = PBXGroup;
+			children = (
+				2F419C772AE1CE4800F19AA7 /* KoombeaTest */,
+				2F419C8E2AE1CE4900F19AA7 /* KoombeaTestTests */,
+				2F419C982AE1CE4900F19AA7 /* KoombeaTestUITests */,
+				2F419C762AE1CE4800F19AA7 /* Products */,
+				423A346C18E2871C99483CBB /* Pods */,
+				746FE6696FA0F83256CF69AC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2F419C762AE1CE4800F19AA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F419C752AE1CE4800F19AA7 /* KoombeaTest.app */,
+				2F419C8B2AE1CE4900F19AA7 /* KoombeaTestTests.xctest */,
+				2F419C952AE1CE4900F19AA7 /* KoombeaTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F419C772AE1CE4800F19AA7 /* KoombeaTest */ = {
+			isa = PBXGroup;
+			children = (
+				2F419CB22AE1D11F00F19AA7 /* API */,
+				2F419CAF2AE1CFB800F19AA7 /* Helpers */,
+				2F419CAA2AE1CEB600F19AA7 /* ContactsList */,
+				2F419C782AE1CE4800F19AA7 /* AppDelegate.swift */,
+				2F419C7A2AE1CE4800F19AA7 /* SceneDelegate.swift */,
+				2F419C7C2AE1CE4800F19AA7 /* ViewController.swift */,
+				2F419C7E2AE1CE4800F19AA7 /* Main.storyboard */,
+				2F419C812AE1CE4900F19AA7 /* Assets.xcassets */,
+				2F419C832AE1CE4900F19AA7 /* LaunchScreen.storyboard */,
+				2F419C862AE1CE4900F19AA7 /* Info.plist */,
+			);
+			path = KoombeaTest;
+			sourceTree = "<group>";
+		};
+		2F419C8E2AE1CE4900F19AA7 /* KoombeaTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F419C8F2AE1CE4900F19AA7 /* KoombeaTestTests.swift */,
+			);
+			path = KoombeaTestTests;
+			sourceTree = "<group>";
+		};
+		2F419C982AE1CE4900F19AA7 /* KoombeaTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F419C992AE1CE4900F19AA7 /* KoombeaTestUITests.swift */,
+				2F419C9B2AE1CE4900F19AA7 /* KoombeaTestUITestsLaunchTests.swift */,
+			);
+			path = KoombeaTestUITests;
+			sourceTree = "<group>";
+		};
+		2F419CAA2AE1CEB600F19AA7 /* ContactsList */ = {
+			isa = PBXGroup;
+			children = (
+				2F419CD42AE1D42900F19AA7 /* Cells */,
+				2F419CA82AE1CEB300F19AA7 /* ContactsListViewController.swift */,
+				2F419CAB2AE1CECC00F19AA7 /* ContactsListViewModel.swift */,
+				2F419CAD2AE1CED500F19AA7 /* ContactsListView.swift */,
+				2F419CCC2AE1D16200F19AA7 /* UserModel.swift */,
+				2F419CCE2AE1D1FC00F19AA7 /* ContactListService.swift */,
+				2F419CD22AE1D2F600F19AA7 /* ContactsListTableViewDataSourceAndDelegate.swift */,
+			);
+			path = ContactsList;
+			sourceTree = "<group>";
+		};
+		2F419CAF2AE1CFB800F19AA7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2F419CB02AE1CFC000F19AA7 /* ScreenSize.swift */,
+				2F419CD02AE1D23600F19AA7 /* LoadingHelper.swift */,
+				2F419CD72AE1D55000F19AA7 /* UITableView+Ext.swift */,
+				2F419CD92AE1D74500F19AA7 /* ImageDownloader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2F419CB22AE1D11F00F19AA7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2F419CB32AE1D11F00F19AA7 /* Mock */,
+				2F419CB52AE1D11F00F19AA7 /* Encoding */,
+				2F419CB92AE1D11F00F19AA7 /* Manager */,
+				2F419CBB2AE1D11F00F19AA7 /* EndPoint */,
+				2F419CBD2AE1D11F00F19AA7 /* Service */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2F419CB32AE1D11F00F19AA7 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				2F419CB42AE1D11F00F19AA7 /* NetworkManagerMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		2F419CB52AE1D11F00F19AA7 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				2F419CB62AE1D11F00F19AA7 /* ParameterEnconding.swift */,
+				2F419CB72AE1D11F00F19AA7 /* JSONParameterEncoder.swift */,
+				2F419CB82AE1D11F00F19AA7 /* URLParameterEnconding.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		2F419CB92AE1D11F00F19AA7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2F419CBA2AE1D11F00F19AA7 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2F419CBB2AE1D11F00F19AA7 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				2F419CBC2AE1D11F00F19AA7 /* KoombeaEndpoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		2F419CBD2AE1D11F00F19AA7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2F419CBE2AE1D11F00F19AA7 /* HTTPTask.swift */,
+				2F419CBF2AE1D11F00F19AA7 /* HTTPMethod.swift */,
+				2F419CC02AE1D11F00F19AA7 /* Router.swift */,
+				2F419CC12AE1D11F00F19AA7 /* EndPointType.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2F419CD42AE1D42900F19AA7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2F419CD52AE1D43200F19AA7 /* ContactTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		423A346C18E2871C99483CBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFD64C1E4AC781CEBABBB256 /* Pods-KoombeaTest.debug.xcconfig */,
+				3A0A5D4B9CF10C98D3C8B131 /* Pods-KoombeaTest.release.xcconfig */,
+				0F93A4193D483C913871D0F1 /* Pods-KoombeaTest-KoombeaTestUITests.debug.xcconfig */,
+				18AC146DAA7BDABA3671111F /* Pods-KoombeaTest-KoombeaTestUITests.release.xcconfig */,
+				E7620EC44D09D50AAA9EFEF8 /* Pods-KoombeaTestTests.debug.xcconfig */,
+				F0E20F7DF7E2BA384904924B /* Pods-KoombeaTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		746FE6696FA0F83256CF69AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8B62F9F845161A682329F3F /* Pods_KoombeaTest.framework */,
+				09CEDA7E3333FEB98E61B37F /* Pods_KoombeaTest_KoombeaTestUITests.framework */,
+				4E224E355F3DCA7F6C3BDA41 /* Pods_KoombeaTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F419C742AE1CE4800F19AA7 /* KoombeaTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F419C9F2AE1CE4900F19AA7 /* Build configuration list for PBXNativeTarget "KoombeaTest" */;
+			buildPhases = (
+				3323BD64E2B4B28761E0BE2E /* [CP] Check Pods Manifest.lock */,
+				2F419C712AE1CE4800F19AA7 /* Sources */,
+				2F419C722AE1CE4800F19AA7 /* Frameworks */,
+				2F419C732AE1CE4800F19AA7 /* Resources */,
+				F899EB520155EA6D5A311228 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KoombeaTest;
+			productName = KoombeaTest;
+			productReference = 2F419C752AE1CE4800F19AA7 /* KoombeaTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F419C8A2AE1CE4900F19AA7 /* KoombeaTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F419CA22AE1CE4900F19AA7 /* Build configuration list for PBXNativeTarget "KoombeaTestTests" */;
+			buildPhases = (
+				9951ED347FF0C6DC0FF7CA65 /* [CP] Check Pods Manifest.lock */,
+				2F419C872AE1CE4900F19AA7 /* Sources */,
+				2F419C882AE1CE4900F19AA7 /* Frameworks */,
+				2F419C892AE1CE4900F19AA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F419C8D2AE1CE4900F19AA7 /* PBXTargetDependency */,
+			);
+			name = KoombeaTestTests;
+			productName = KoombeaTestTests;
+			productReference = 2F419C8B2AE1CE4900F19AA7 /* KoombeaTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2F419C942AE1CE4900F19AA7 /* KoombeaTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F419CA52AE1CE4900F19AA7 /* Build configuration list for PBXNativeTarget "KoombeaTestUITests" */;
+			buildPhases = (
+				16D7071C5E2FC55160DB8149 /* [CP] Check Pods Manifest.lock */,
+				2F419C912AE1CE4900F19AA7 /* Sources */,
+				2F419C922AE1CE4900F19AA7 /* Frameworks */,
+				2F419C932AE1CE4900F19AA7 /* Resources */,
+				0F1208D72221A1DD8A2CC2E1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F419C972AE1CE4900F19AA7 /* PBXTargetDependency */,
+			);
+			name = KoombeaTestUITests;
+			productName = KoombeaTestUITests;
+			productReference = 2F419C952AE1CE4900F19AA7 /* KoombeaTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F419C6D2AE1CE4800F19AA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					2F419C742AE1CE4800F19AA7 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					2F419C8A2AE1CE4900F19AA7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 2F419C742AE1CE4800F19AA7;
+					};
+					2F419C942AE1CE4900F19AA7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 2F419C742AE1CE4800F19AA7;
+					};
+				};
+			};
+			buildConfigurationList = 2F419C702AE1CE4800F19AA7 /* Build configuration list for PBXProject "KoombeaTest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F419C6C2AE1CE4800F19AA7;
+			productRefGroup = 2F419C762AE1CE4800F19AA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F419C742AE1CE4800F19AA7 /* KoombeaTest */,
+				2F419C8A2AE1CE4900F19AA7 /* KoombeaTestTests */,
+				2F419C942AE1CE4900F19AA7 /* KoombeaTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F419C732AE1CE4800F19AA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F419C852AE1CE4900F19AA7 /* LaunchScreen.storyboard in Resources */,
+				2F419C822AE1CE4900F19AA7 /* Assets.xcassets in Resources */,
+				2F419C802AE1CE4800F19AA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F419C892AE1CE4900F19AA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F419C932AE1CE4900F19AA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F1208D72221A1DD8A2CC2E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KoombeaTest-KoombeaTestUITests/Pods-KoombeaTest-KoombeaTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KoombeaTest-KoombeaTestUITests/Pods-KoombeaTest-KoombeaTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KoombeaTest-KoombeaTestUITests/Pods-KoombeaTest-KoombeaTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16D7071C5E2FC55160DB8149 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KoombeaTest-KoombeaTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3323BD64E2B4B28761E0BE2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KoombeaTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9951ED347FF0C6DC0FF7CA65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KoombeaTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F899EB520155EA6D5A311228 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KoombeaTest/Pods-KoombeaTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KoombeaTest/Pods-KoombeaTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KoombeaTest/Pods-KoombeaTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F419C712AE1CE4800F19AA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F419CD82AE1D55000F19AA7 /* UITableView+Ext.swift in Sources */,
+				2F419CC82AE1D11F00F19AA7 /* HTTPTask.swift in Sources */,
+				2F419CC62AE1D11F00F19AA7 /* NetworkManager.swift in Sources */,
+				2F419CD62AE1D43200F19AA7 /* ContactTableViewCell.swift in Sources */,
+				2F419CD12AE1D23600F19AA7 /* LoadingHelper.swift in Sources */,
+				2F419CC42AE1D11F00F19AA7 /* JSONParameterEncoder.swift in Sources */,
+				2F419CAC2AE1CECC00F19AA7 /* ContactsListViewModel.swift in Sources */,
+				2F419CC32AE1D11F00F19AA7 /* ParameterEnconding.swift in Sources */,
+				2F419CD32AE1D2F600F19AA7 /* ContactsListTableViewDataSourceAndDelegate.swift in Sources */,
+				2F419CAE2AE1CED500F19AA7 /* ContactsListView.swift in Sources */,
+				2F419CDA2AE1D74500F19AA7 /* ImageDownloader.swift in Sources */,
+				2F419CC22AE1D11F00F19AA7 /* NetworkManagerMock.swift in Sources */,
+				2F419CC72AE1D11F00F19AA7 /* KoombeaEndpoint.swift in Sources */,
+				2F419CCA2AE1D11F00F19AA7 /* Router.swift in Sources */,
+				2F419CC92AE1D11F00F19AA7 /* HTTPMethod.swift in Sources */,
+				2F419C7D2AE1CE4800F19AA7 /* ViewController.swift in Sources */,
+				2F419C792AE1CE4800F19AA7 /* AppDelegate.swift in Sources */,
+				2F419CB12AE1CFC000F19AA7 /* ScreenSize.swift in Sources */,
+				2F419CCB2AE1D11F00F19AA7 /* EndPointType.swift in Sources */,
+				2F419CA92AE1CEB300F19AA7 /* ContactsListViewController.swift in Sources */,
+				2F419C7B2AE1CE4800F19AA7 /* SceneDelegate.swift in Sources */,
+				2F419CCF2AE1D1FC00F19AA7 /* ContactListService.swift in Sources */,
+				2F419CCD2AE1D16200F19AA7 /* UserModel.swift in Sources */,
+				2F419CC52AE1D11F00F19AA7 /* URLParameterEnconding.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F419C872AE1CE4900F19AA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F419C902AE1CE4900F19AA7 /* KoombeaTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F419C912AE1CE4900F19AA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F419C9A2AE1CE4900F19AA7 /* KoombeaTestUITests.swift in Sources */,
+				2F419C9C2AE1CE4900F19AA7 /* KoombeaTestUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F419C8D2AE1CE4900F19AA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F419C742AE1CE4800F19AA7 /* KoombeaTest */;
+			targetProxy = 2F419C8C2AE1CE4900F19AA7 /* PBXContainerItemProxy */;
+		};
+		2F419C972AE1CE4900F19AA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F419C742AE1CE4800F19AA7 /* KoombeaTest */;
+			targetProxy = 2F419C962AE1CE4900F19AA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F419C7E2AE1CE4800F19AA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F419C7F2AE1CE4800F19AA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F419C832AE1CE4900F19AA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F419C842AE1CE4900F19AA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F419C9D2AE1CE4900F19AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F419C9E2AE1CE4900F19AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F419CA02AE1CE4900F19AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFD64C1E4AC781CEBABBB256 /* Pods-KoombeaTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 278QJ34EC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KoombeaTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apps.mjkweber.KoombeaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F419CA12AE1CE4900F19AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A0A5D4B9CF10C98D3C8B131 /* Pods-KoombeaTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 278QJ34EC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KoombeaTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apps.mjkweber.KoombeaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2F419CA32AE1CE4900F19AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7620EC44D09D50AAA9EFEF8 /* Pods-KoombeaTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 278QJ34EC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apps.mjkweber.KoombeaTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KoombeaTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KoombeaTest";
+			};
+			name = Debug;
+		};
+		2F419CA42AE1CE4900F19AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0E20F7DF7E2BA384904924B /* Pods-KoombeaTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 278QJ34EC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apps.mjkweber.KoombeaTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KoombeaTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KoombeaTest";
+			};
+			name = Release;
+		};
+		2F419CA62AE1CE4900F19AA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F93A4193D483C913871D0F1 /* Pods-KoombeaTest-KoombeaTestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 278QJ34EC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apps.mjkweber.KoombeaTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KoombeaTest;
+			};
+			name = Debug;
+		};
+		2F419CA72AE1CE4900F19AA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18AC146DAA7BDABA3671111F /* Pods-KoombeaTest-KoombeaTestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 278QJ34EC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apps.mjkweber.KoombeaTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KoombeaTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F419C702AE1CE4800F19AA7 /* Build configuration list for PBXProject "KoombeaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F419C9D2AE1CE4900F19AA7 /* Debug */,
+				2F419C9E2AE1CE4900F19AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F419C9F2AE1CE4900F19AA7 /* Build configuration list for PBXNativeTarget "KoombeaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F419CA02AE1CE4900F19AA7 /* Debug */,
+				2F419CA12AE1CE4900F19AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F419CA22AE1CE4900F19AA7 /* Build configuration list for PBXNativeTarget "KoombeaTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F419CA32AE1CE4900F19AA7 /* Debug */,
+				2F419CA42AE1CE4900F19AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F419CA52AE1CE4900F19AA7 /* Build configuration list for PBXNativeTarget "KoombeaTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F419CA62AE1CE4900F19AA7 /* Debug */,
+				2F419CA72AE1CE4900F19AA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F419C6D2AE1CE4800F19AA7 /* Project object */;
+}
